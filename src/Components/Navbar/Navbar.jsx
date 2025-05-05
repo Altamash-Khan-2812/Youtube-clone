@@ -7,6 +7,7 @@ import upload_icon from "../../assets/upload.png";
 import more_icon from "../../assets/more.png";
 import notification_icon from "../../assets/notification.png";
 import profile_icon from "../../assets/ayan.jpg";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ setSidebar, sidebar }) => {
   return (
@@ -18,7 +19,9 @@ const Navbar = ({ setSidebar, sidebar }) => {
           alt="Menu icon"
           onClick={() => setSidebar((prev) => (prev === false ? true : false))}
         />
-        <img className="logo" src={logo} alt="Youtube logo" />
+        <Link to="/">
+          <img className="logo" src={logo} alt="Youtube logo" />
+        </Link>
       </div>
 
       <div className="nav-middle flex-div">
