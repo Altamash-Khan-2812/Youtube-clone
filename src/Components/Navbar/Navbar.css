@@ -44,3 +44,37 @@ nav {
   width: 35px;
   border-radius: 50%;
 }
+
+@media (max-width: 900px) {
+  .menu-icon{
+    display: none;
+  }
+
+  .nav-right img{
+    display: none;
+  }
+
+  .nav-right .user-icon{
+    display: block;
+    width: 30px;
+  }
+
+  .nav-left .logo{
+    width: 90px;
+  }
+
+  .nav-middle .search-box input{
+    width: 250px;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-middle .search-box input{
+    width: 100px;
+  }
+
+ .nav-left  .logo{
+    width: 70px;
+    object-fit: contain;
+  }
+}
